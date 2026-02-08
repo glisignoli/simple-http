@@ -63,8 +63,8 @@ jobs:
       # This step removes old images
       - name: Delete old Docker images
         uses: actions/delete-package-versions@v5
-        with: 
-          package-name: 'ai-yt-dlp-web'
+        with:
+          package-name: 'simple-http'
           package-type: 'container'
           min-versions-to-keep: 3
           # Regex ignore main and nightly
